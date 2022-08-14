@@ -1,0 +1,44 @@
+{
+  "name": "typescript-project",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Artur Puzio",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "npm": "^8.5.0",
+    "node": "^16.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "lint:check": "eslint --max-warnings 0 \"{src,test}/**/*.ts\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "typecheck": "tsc --noEmit",
+    "check": "yarn run typecheck && yarn run lint:check",
+    "clean": "rm -r dist"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.0.0",
+    "@types/node": "^16.9.1",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "dotenv": "^16.0.0",
+    "eslint": "~8.21.0",
+    "eslint-config-prettier": "~8.5.0",
+    "eslint-import-resolver-typescript": "~3.4.0",
+    "eslint-plugin-filename-rules": "~1.2.0",
+    "eslint-plugin-import": "~2.26.0",
+    "eslint-plugin-prefer-arrow": "~1.2.3",
+    "eslint-plugin-prettier": "~4.2.0",
+    "jest": "^28.0.0",
+    "prettier": "^2.5.1",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.3.0",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "~4.7.0",
+    "winston": "^3.8.1"
+  }
+}

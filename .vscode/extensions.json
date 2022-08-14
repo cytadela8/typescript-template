@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "pmneo.tsimporter",
+    "sonarsource.sonarlint-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "orta.vscode-jest",
+    "github.remotehub",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

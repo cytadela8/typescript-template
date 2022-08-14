@@ -1,0 +1,23 @@
+{
+  "ts-node": {
+    "files": true,
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "out",
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "sourceMap": true,
+    "incremental": true,
+    "types": ["node", "jest"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@test/*": ["./test/*"]
+    }
+  },
+  "include": ["./test", "./src", "./scripts", "./*.ts"]
+}
