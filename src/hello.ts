@@ -7,7 +7,8 @@ export const hellTemperature = (): number => 10000;
 
 const main = () => {
   const temperature = hellTemperature();
-  logger.info(process.env["MSG"] ?? "Hell World", { temperature });
+  const message = process.env["MSG"] ?? "Hell world";
+  logger.info(message, { temperature });
 };
 
 if (require.main === module) {

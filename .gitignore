@@ -51,4 +51,4 @@ typings/
 
 # build artifacts
 dist
-
+out
